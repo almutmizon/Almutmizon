@@ -1,9 +1,570 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <meta http-equiv="refresh" content="0; url=Home/index.html">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">المتميزون للدعاية والإعلان</title>
+    <link rel="stylesheet" href="..\Styles\main.css">
+    <link rel="stylesheet" href="..\Styles\Home.css">
+    <link rel="stylesheet" href="..\Styles\Buttons.css">
+    <link rel="stylesheet" href="..\Styles\navBar.css">
+    <link rel="stylesheet" href="..\Styles\footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    
+    <div id="header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background" id="heroBackground">
+                <div class="hero-image active" style="background-image: url('../Media/LED_1.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/graphic_1.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/working_1.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/LED_2.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/3D_2.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/graphic_5.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/graphic_3.webp');"></div>
+                <div class="hero-image" style="background-image: url('../Media/graphic_4.webp');"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="primary-text" data-i18n="hero_title">المتميزون للدعاية والإعلان</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero_description">
+                    نحن شركة متخصصة في تصنيع وتركيب جميع أنواع اللوحات الإعلانية وشاشات المحلات التجارية الخارجية والداخلية.
+                </p>
+                <div class="hero-dynamic-text" id="heroDynamicText" data-i18n="hero_dynamic_text">
+                    لوحات LED: إضاءة قوية وألوان زاهية لجذب الانتباه.
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='../Contact/index.html'" data-i18n="hero_btn_inquiry">
+                        <span>ارسال طلب استفسار</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="window.location.href='../Portfolio/index.html'" data-i18n="hero_btn_portfolio">
+                        شاهد أعمالنا
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-content">
+                        <p class="section-description" data-i18n="services_description">
+                            اكتشف مجموعة شاملة من الحلول الإعلانية المبتكرة المصممة خصيصاً لتلبية احتياجاتك وتحقيق رؤيتك
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services-grid" id="servicesGrid">
+                    </div>
+
+                <div class="section-cta">
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='../Services/index.html'">
+                        <span data-i18n="services_explore_all">استكشف جميع خدماتنا</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="why_choose_title">لماذا تختارنا؟</h2>
+                    <p class="section-description" data-i18n="why_choose_description">
+                        نحن نجمع بين الخبرة والإبداع والجودة لنقدم لك أفضل الحلول الإعلانية
+                    </p>
+                </div>
+
+                <div class="why-choose-content">
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 data-i18n="why_choose_feature1_title">الخبرة والاحترافية</h3>
+                                <p data-i18n="why_choose_feature1_description">سنوات طويلة من الخبرة في مجال الإعلانات البصرية جعلتنا نفهم احتياجات السوق ومتطلبات العملاء</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 data-i18n="why_choose_feature2_title">الجودة والتميز</h3>
+                                <p data-i18n="why_choose_feature2_description">نستخدم أفضل المواد والتقنيات المتاحة لضمان منتج نهائي يفوق توقعاتك</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 data-i18n="why_choose_feature3_title">الخدمة الشاملة</h3>
+                                <p data-i18n="why_choose_feature3_description">من التصميم والتصنيع وحتى التركيب والصيانة، نحن معك في كل خطوة</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3 data-i18n="why_choose_feature4_title">أسعار تنافسية</h3>
+                                <p data-i18n="why_choose_feature4_description">نقدم أفضل قيمة مقابل المال مع أسعار تنافسية تناسب جميع الميزانيات</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-users stat-icon"></i>
+                            <div class="stat-number">+500</div>
+                            <div class="stat-label" data-i18n="stats_projects">مشروع منجز</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-star stat-icon"></i>
+                            <div class="stat-number">+200</div>
+                            <div class="stat-label" data-i18n="stats_clients">عميل راضٍ</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-award stat-icon"></i>
+                            <div class="stat-number">5</div>
+                            <div class="stat-label" data-i18n="stats_experience">سنوات خبرة</div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-clock stat-icon"></i>
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label" data-i18n="stats_support">دعم فني</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="testimonials_title">عملاؤنا يثقون بنا</h2>
+                    <p class="section-description" data-i18n="testimonials_description">
+                        شهادات حقيقية من عملائنا الكرام تعكس جودة خدماتنا ومستوى رضاهم
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-content" data-i18n="testimonials_testimonial1_content">
+                            "تعاملت مع ALMUTMIZON ADVERTISING لتصميم وتركيب لوحة LED لمحلي، والنتيجة فاقت كل توقعاتي. جودة عالية وخدمة ممتازة."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-name">NAZIH</div>
+                            <div class="author-role" data-i18n="testimonials_testimonial1_role">صاحب محل تجاري</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-content" data-i18n="testimonials_testimonial2_content">
+                            "انهم سريعون جدا في العمل و يعلمون تماما ماذا يفعلون."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Ajinas N K</div>
+                            <div class="author-role" data-i18n="testimonials_testimonial2_role">صاحب محل تجاري</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-content" data-i18n="testimonials_testimonial3_content">
+                            "خدمة جيدة و طاقم احترافي"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Javeed Mohammed</div>
+                            <div class="author-role" data-i18n="testimonials_testimonial3_role">رجل أعمال</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <section class="final-cta">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge" data-i18n="cta_badge">
+                    ماذا تنتظر؟ تواصل معنا الآن!
+                    <i class="fas fa-rocket"></i>
+                </div>
+                
+                <p class="cta-description" data-i18n="cta_description">
+                    تواصل معنا اليوم واحصل على استشارة مجانية وعرض سعر مخصص لمشروعك. 
+                    فريقنا المتخصص جاهز لتحويل أفكارك إلى حلول رقمية مبتكرة تحقق أهدافك وتتفوق على توقعاتك.
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-cta btn-cta-primary" onclick="window.location.href='../Contact/index.html'" data-i18n="cta_btn_contact">
+                        تواصل معنا مباشرة
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    
+                    <button class="btn-cta btn-cta-secondary" onclick="toggleLocationMap()" data-i18n="cta_btn_visit">
+                        <i class="fas fa-map-marker-alt"></i>
+                        قم بزيارتنا
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-i18n="cta_feature1">استشارة مجانية</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-clock"></i>
+                        <span data-i18n="cta_feature2">رد خلال 24 ساعة</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span data-i18n="cta_feature3">ضمان الجودة</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-users"></i>
+                        <span data-i18n="cta_feature4">فريق متخصص</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="location-modal" id="locationModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" data-i18n="modal_title">
+                        <i class="fas fa-map-marker-alt"></i>
+                        موقعنا
+                    </h3>
+                    <button class="close-btn" onclick="toggleLocationMap()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="location-info">
+                    <div class="info-section">
+                        <h3 data-i18n="modal_office_info"><i class="fas fa-building"></i> معلومات المكتب</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="modal_address_line">العنوان الكامل لشركتنا</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span data-i18n="modal_working_hours">السبت - الخميس: 9:00 ص - 6:00 م</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div><span>971544787852+</span></div>
+                            <div><span>971505170112+</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-section">
+                    <h3 data-i18n="modal_directions"><i class="fas fa-route"></i> كيفية الوصول</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-city"></i>
+                        <span data-i18n="modal_country">الإمارات العربية المتحدة - عجمان</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="modal_street_address">عجمان الصناعية 1 - شارع غرناطة</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <span data-i18n="modal_parking">مواقف مجانية متاحة</span>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.8074786002385!2d55.48794927470483!3d25.377768024364425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f590a9c055569%3A0x497fe5fbab323f74!2z2KfZhNmF2KrZhdmK2LLZiNmGINmE2YTYr9i52KfZitipINmI2KfZhNin2LnZhNin2YYgQUxNVVRNSVpPTiBBRFZFUlRJU0lORw!5e0!3m2!1sen!2sae!4v1753273018187!5m2!1sen!2sae"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="https://maps.app.goo.gl/pkjjepu5idPPsVfr9" target="_blank" class="action-btn btn-directions" data-i18n="modal_get_directions">
+                        <i class="fas fa-directions"></i>
+                        احصل على الاتجاهات
+                    </a>
+                    <a href="tel:+971505170112" target="_blank" class="action-btn btn-call" data-i18n="modal_call_us">
+                        <i class="fas fa-phone"></i>
+                        اتصل بنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <div id="footer"></div>
+    
+    <script src="../main.js"></script>
+    <script>
+    // Global Variables
+    let currentImageIndex = 0;
+
+    // Images
+    led1 = "../Media/LED_1.webp"
+    led2 = "../Media/LED_2.webp"
+    work1 = "../Media/working_1.webp"
+    work2 = "../Media/working_2.webp"
+    D1 = "../Media/3D_1.webp"
+    D2 = "../Media/3D_2.webp"
+    ledscr = "../Media/LED_Screen.webp"
+    grf1 = "../Media/graphic_1.webp"
+    grf2 = "../Media/graphic_2.webp"
+    grf3 = "../Media/graphic_3.webp"
+    grf4 = "../Media/graphic_4.webp"
+    grf5 = "../Media/graphic_5.webp"
+    grf6 = "../Media/graphic_6.webp"
+
+    // DOM Elements
+    const heroBackground = document.getElementById('heroBackground');
+    const heroDynamicText = document.getElementById('heroDynamicText');
+    const servicesGrid = document.getElementById('servicesGrid');
+
+
+    // Hero images and dynamic texts (Arabic)
+    const heroData = [
+    { src: led1, textKey: 'Herodesc1' },
+    { src: grf1, textKey: 'Herodesc2' },
+    { src: work1, textKey: 'Herodesc3' },
+    { src: led2, textKey: 'Herodesc4' },
+    { src: D2, textKey: 'Herodesc5' },
+    { src: grf5, textKey: 'Herodesc6' },
+    { src: grf3, textKey: 'Herodesc7' },
+    { src: grf4, textKey: 'Herodesc8' }
+    ];
+
+    // Services data
+    const servicesData = [
+    {
+        title: "لوحات ثلاثية الأبعاد",
+        description: "تصاميم ثلاثية الأبعاد تجذب الأنظار",
+        image: grf2,
+        icon: "fas fa-cube"
+    },
+    {
+        title: "لوحات LED",
+        description: "إضاءة متطورة وألوان زاهية",
+        image: led1,
+        icon: "fas fa-bolt"
+    },
+    {
+        title: "شاشات عرض رقمية",
+        description: "تقنية حديثة لعرض المحتوى التفاعلي والديناميكي",
+        image: ledscr,
+        icon: "fas fa-tv"
+    },
+    {
+        title: "تصميم جرافيك",
+        description: "إبداع بصري يحول أفكارك إلى واقع جذاب",
+        image: grf1,
+        icon: "fas fa-palette"
+    },
+    {
+        title: "اتقان و ابداع",
+        description: "احترافية في التصميم و التنفيذ",
+        image: grf6,
+        icon: "fas fa-star"
+    },
+    {
+        title: "تركيب وصيانة",
+        description: "خدمة شاملة من التصميم حتى الصيانة الدورية",
+        image: work1,
+        icon: "fas fa-wrench"
+    }
+    ];
+
+    // Remove translations object. Will be set from main.js
+    let translations = {};
+
+    // Language detection (default to 'ar', or get from localStorage)
+    let currentLang = localStorage.getItem('lang') || document.documentElement.lang || 'ar';
+
+    // Initialize the application
+    document.addEventListener('DOMContentLoaded', function() {
+        // Wait for main.js to provide translations
+        if (window.setHomePageTranslations) return;
+        window.setHomePageTranslations = function(newTranslations) {
+            translations = newTranslations;
+            currentLang = localStorage.getItem('lang') || document.documentElement.lang || 'ar';
+            initializeHeroSlider();
+            initializeServices();
+        };
+        // If translations already loaded (first load), call manually
+        if (Object.keys(translations).length > 0) {
+            window.setHomePageTranslations(translations);
+        }
+    });
+    
+    // Hero Slider Functions
+    function initializeHeroSlider() {
+        const heroImages = heroBackground.querySelectorAll('.hero-image');
+        // Clear previous interval if exists
+        if (window.heroInterval) {
+            clearInterval(window.heroInterval);
+        }
+        // Reset to first image
+        heroImages.forEach(img => img.classList.remove('active'));
+        currentImageIndex = 0;
+        heroImages[currentImageIndex].classList.add('active');
+        // Set initial text based on language
+        updateHeroDynamicText();
+        // Start the slider
+        window.heroInterval = setInterval(nextHeroImage, 3000);
+    }
+
+    function updateHeroDynamicText() {
+        const key = heroData[currentImageIndex].textKey;
+        heroDynamicText.textContent = translations[key] || '';
+        heroDynamicText.style.opacity = '0';
+        setTimeout(() => {
+            heroDynamicText.style.opacity = '1';
+        }, 500);
+    }
+
+    function nextHeroImage() {
+        const heroImages = heroBackground.querySelectorAll('.hero-image');
+        // Remove active class from current image
+        heroImages[currentImageIndex].classList.remove('active');
+        // Move to next image
+        currentImageIndex = (currentImageIndex + 1) % heroData.length;
+        // Add active class to new image
+        heroImages[currentImageIndex].classList.add('active');
+        // Update dynamic text with translation
+        updateHeroDynamicText();
+    }
+
+
+    // Services Functions
+    function initializeServices() {
+        renderServices();
+    }
+
+    function renderServices() {
+        servicesGrid.innerHTML = '';
+        servicesData.forEach((service, index) => {
+            const serviceCard = createServiceCard(service, index);
+            servicesGrid.appendChild(serviceCard);
+        });
+    }
+
+    function createServiceCard(service, index) {
+        const card = document.createElement('div');
+        card.className = 'service-card';
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        // Use translated title for aria-label
+        const titleKey = `service${index+1}_title`;
+        card.setAttribute('aria-label', `${translations[titleKey] || ''}`);
+
+        card.innerHTML = `
+            <div class="service-card-bg" style="background-image: url('${service.image}')"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-content">
+                <div class="service-icon">
+                    <i class="${service.icon}"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">${translations[`service${index+1}_title`] || ''}</h3>
+                    <p class="service-desc">${translations[`service${index+1}_desc`] || ''}</p>
+                </div>
+            </div>
+            <div class="service-border"></div>
+        `;
+
+        // Add click handler
+        card.addEventListener('click', handleServiceClick);
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleServiceClick();
+            }
+        });
+
+        return card;
+    }
+
+    function handleServiceClick() {
+        // Simulate navigation to contact page
+        console.log('Navigating to contact page...');
+        // In a real application, you would handle routing here
+        // For now, we'll just scroll to top
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+
+    function toggleLocationMap() {
+        const modal = document.getElementById('locationModal');
+        modal.classList.toggle('active');
+        
+        // Prevent body scroll when modal is open
+        if (modal.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('locationModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            toggleLocationMap();
+        }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const modal = document.getElementById('locationModal');
+            if (modal.classList.contains('active')) {
+                toggleLocationMap();
+            }
+        }
+    });
+
+    </script>
 </body>
 </html>
