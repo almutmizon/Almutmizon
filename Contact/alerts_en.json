@@ -1,0 +1,6 @@
+{
+  "alert_invalid_email": "Please enter a valid email address.",
+  "alert_submit_success": "Your request was sent successfully! A confirmation message has been sent to your email.",
+  "alert_submit_success_no_reply": "Request sent, but we couldn’t send the confirmation.",
+  "alert_submit_error": "An error occurred during submission, please try again later."
+}

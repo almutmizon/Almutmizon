@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact_page_title">تواصل معنا - المتميزون</title>
+    <link rel="stylesheet" href="..\Styles\main.css">
+    <link rel="stylesheet" href="..\Styles\navBar.css">
+    <link rel="stylesheet" href="..\Styles\footer.css">
+    <link rel="stylesheet" href="..\Styles\Contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div>
+                    <h1 data-i18n="contact_hero_title">تواصل معنا</h1>
+                    <p data-i18n="contact_hero_subtitle">نحن هنا للإجابة على جميع استفساراتك وتقديم أفضل الحلول الإعلانية لعملك.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information & Form Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="grid">
+                    <!-- Contact Information -->
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title" data-i18n="contact_info_title">معلومات الاتصال</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p data-i18n="contact_info_address">الامارات العربية المتحدة - عجمان - الصناعية 1 - شارع غرناطة</p>
+                                </div>
+                                <div class="contact-info">
+                                    <i class="fab fa-whatsapp" style="font-size: 1.3em;"></i>
+                                    <i class="fas fa-phone"></i>
+                                    <p>+971544787852</p>
+                                    <p data-i18n="contact_info_and" class="mx-2">&</p>
+                                    <p>+971505170112</p>
+                                </div>
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>almutmizon.adv@gmail.com</p>
+                                </div>
+                                <div class="contact-info">
+                                    <i class="fas fa-clock"></i>
+                                    <p data-i18n="contact_info_hours">السبت - الخميس: 9:00 صباحاً - 6:00 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title" data-i18n="contact_location_title">الموقع</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="map-container">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.8074786002385!2d55.48794927470483!3d25.377768024364425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f590a9c055569%3A0x497fe5fbab323f74!2z2KfZhNmF2KrZhdmK2LLZiNmGINmE2YTYr9i52KfZitipINmI2KfZhNin2LnZhNin2YYgQUxNVVRNSVpPTiBBRFZFUlRJU0lORw!5e0!3m2!1sen!2sae!4v1753273018187!5m2!1sen!2sae"
+                                        width="600"
+                                        height="450"
+                                        style="border:0;"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote Request Form -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title" data-i18n="contact_form_title">طلب استفسار</h2>
+                        </div>
+                        <div class="card-content">
+                            <div id="alert" class="alert alert-success" data-i18n="contact_form_alert_success">
+                                تم استلام رسالتك بنجاح! سنتواصل معك قريباً.
+                            </div>
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="label" for="name" data-i18n="contact_form_label_name">الاسم الكامل</label>
+                                        <input class="input" id="name" name="from_name" type="text" placeholder="ادخل اسمك" data-i18n-placeholder="contact_form_placeholder_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label" for="email" data-i18n="contact_form_label_email">البريد الإلكتروني</label>
+                                        <input class="input" id="email" name="from_email" type="email" placeholder="ادخل بريدك الإلكتروني" data-i18n-placeholder="contact_form_placeholder_email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="label" for="phone" data-i18n="contact_form_label_phone">رقم الهاتف (واتساب/اتصال)</label>
+                                        <input class="input" id="phone" name="phone" type="tel" placeholder="ادخل رقم هاتفك" data-i18n-placeholder="contact_form_placeholder_phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label" for="service" data-i18n="contact_form_label_service">الخدمة المطلوبة</label>
+                                        <input class="input" id="service" name="service" type="text" placeholder="مثال: لوحات LED، تصميم جرافيك" data-i18n-placeholder="contact_form_placeholder_service" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label" for="message" data-i18n="contact_form_label_message">رسالتك / تفاصيل المشروع</label>
+                                    <textarea class="textarea" id="message" name="message" placeholder="صف مشروعك أو استفسارك بالتفصيل" data-i18n-placeholder="contact_form_placeholder_message" rows="5"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact_form_button_submit">
+                                    إرسال الطلب
+                                </button>
+                                <input type="hidden" name="subject" id="encodedSubject">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 data-i18n="contact_cta_title">هل لديك أسئلة أخرى؟</h2>
+                <p data-i18n="contact_cta_subtitle">لا تتردد في التواصل معنا مباشرة عبر الهاتف أو البريد الإلكتروني.</p>
+                <a href="tel:+971544787852" class="btn btn-secondary btn-lg" data-i18n="contact_cta_button">
+                    اتصل بنا الآن
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer"></div>
+    
+
+    <script src="..\main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Simple i18n loader and getter
+        const i18n = {
+            translations: {},
+            lang: document.documentElement.lang || 'ar',
+            async load(lang) {
+                const url = lang === 'en' ? 'alerts_en.json' : 'alerts_ar.json';
+                try {
+                    const res = await fetch(url);
+                    this.translations = await res.json();
+                    this.lang = lang;
+                } catch (e) {
+                    console.error('Failed to load translations', e);
+                    this.translations = {};
+                }
+            },
+            t(key) {
+                return this.translations[key] || key;
+            }
+        };
+
+        (function() {
+            emailjs.init("Z12JcW64HNaXWhtTC");
+        })();
+
+        // Wait for translations to load before binding form
+        (async function() {
+            await i18n.load(document.documentElement.lang || 'ar');
+
+            document.getElementById("contactForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                function encodeSubject(subject) {
+                    const base64 = btoa(unescape(encodeURIComponent(subject)));
+                    return `=?UTF-8?B?${base64}?=`;
+                }
+                document.getElementById("encodedSubject").value = encodeSubject("We've received your message");
+                const form = this;
+
+                // Basic email validation
+                const email = document.getElementById("email").value;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert(i18n.t('alert_invalid_email'));
+                    return;
+                }
+
+                // First email (to you)
+                emailjs.sendForm("service_wfe0s0c", "template_5f39cir", form)
+                .then(function(response) {
+                    // Second email (auto-reply to user)
+                    emailjs.sendForm("service_wfe0s0c", "template_0e2xt4w", form)
+                    .then(function(replyResponse) {
+                        alert(i18n.t('alert_submit_success'));
+                        form.reset();
+                    })
+                    .catch(function(replyError) {
+                        alert(i18n.t('alert_submit_success_no_reply'));
+                        console.error("Auto-reply error:", replyError);
+                    });
+                })
+                .catch(function(error) {
+                    alert(i18n.t('alert_submit_error'));
+                    console.error("Contact form error:", error);
+                });
+            });
+        })();
+    </script>
+
+</body>
+</html>
